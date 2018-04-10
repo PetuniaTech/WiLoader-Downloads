@@ -1,0 +1,12 @@
+Last Update: 18/10/2017
+
+WiLoaderFX: (Software Version: 1.0.0)
+
+1) WiLoaderFX (and Arduino IDE) path should not contain some special characters such as '+' and '!'. Otherwise WiLoaderFX will fail to load wiloader.conf and wiloader-mcus.xml files at start up and Arduino IDE will fail to launch WiLoaderFX.
+
+Example: C:\Users\my+Name\Desktop\WiLoaderFX    or    D:\a+b\arduino-1.8.4
+
+
+WiLoader: (Firmware Version: 1.0)
+
+1) WiLoader sends one dummy byte through UART port immediately after power-on/reset (if UART is enabled).
